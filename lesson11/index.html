@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-list center">
+            <ul class="header-list-left">
+                <li><img src="img/logo-header.png" alt="logo"></li>
+                <li><img src="img/search-header.svg" alt="search"></li>
+            </ul>
+            <ul class="header-list-right">
+                <li><img src="img/menu-header.svg" alt="menu"></li>
+                <li><img src="img/profile-header.svg" alt="profile"></li>
+                <li><img src="img/basket-header.svg" alt="basket"></li>
+            </ul>        
+        </div>
+    </header>
+    <section class="promo">
+        <div class="promo-items">
+            <div class="promo-list">
+                <img class="promo-list-img" src="img/header-top-img.png" alt="">
+            </div>
+            <div class="promo-list-content">
+                <div class="promo-trait"></div>
+                <div>
+                    <h1 class="promo-title">The brand</h1>
+                    <h2 class="promo-subtitle">of luxerious <span>fashion</span></h2>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="offer center">
+        <div class="offer-item">
+            <div class="offer-item-cover">
+                <h2 class="offer-item-txt">30% off<br><span>for women</span></h2>
+            </div>
+            <div class="offer-item-cover">
+                <h2 class="offer-item-txt">hot deal<br><span>for men</span></h2>
+            </div>
+            <div class="offer-item-cover">
+                <h2 class="offer-item-txt">new arrivals<br><span>for kids</span></h2>
+            </div>
+        </div>
+        <div class="offer-item-cover-accesories">
+                <h2 class="offer-item-text">luxirous &amp;&nbsp;trendy<br><span>accesories</span></h2>
+        </div>
+        
+    </section>
+    <section class="products center">
+        <div class="products-title">
+            <h2>Fetured Items</h2>
+            <p>Shop for items based on what we featured in this week</p>
+        </div>
+        <div class="products-button-wrp">
+            <button class="products-button">
+                <span class="products-button-txt">Browse All Product</span>
+            </button>
+        </div>
+    </section>
+    <section class="feature">
+        <ul class="feature-item">
+            <li class="feature-list">
+                <div>
+                    <img class="feature-img" src="img/free-delivery.svg" alt="free-delivery">
+                </div>
+                <div class="feature-text-content">
+                    <h2 class="feature-title">Free Delivery</h2>
+                    <p class="feature-txt">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </li>
+            <li class="feature-list">
+                <div>
+                    <img class="feature-img" src="img/sales-discounts.svg" alt="sales-discounts">
+                </div>  
+                <div class="feature-text-content">
+                    <h2 class="feature-title">Sales &amp;&nbsp;discounts</h2>
+                    <p class="feature-txt">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </li>
+            <li class="feature-list">
+                <div>
+                    <img class="feature-img" src="img/quality-assurance.svg" alt="quality-assurance">
+                </div>
+                <div class="feature-text-content">
+                    <h2 class="feature-title">Quality assurance</h2>
+                    <p class="feature-txt">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="subscribe">
+        <div class="subscribe-item">
+            <div class="subscribe-review">
+                <img class="subscribe-img" src="img/Intersect.png" alt="Intersect">
+                <p class="subscribe-txt">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, <span>a&nbsp;pulvinar purus condimentum&raquo;</span></p>
+            </div>
+            <div class="subscribe-form-content">
+                <h2 class="subscribe-title">SUBSCRIBE</h2>
+                <p class="subscribe-subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form class="subscribe-form" action="#">
+                    <input class="subscribe-input" type="email" placeholder="Enter Your Email">
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="copyright">
+        <div class="copyright-item center">
+            <div>
+                <p class="copyright-txt">
+                    &copy;&nbsp;2022 Brand All Rights Reserved.
+                </p>
+            </div>
+            <ul class="copyright-social-icon">
+                <li>
+                    <a href="#">
+                        <img class="copyright-social-icon-img" src="img/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="copyright-social-icon-img" src="img/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="copyright-social-icon-img" src="img/pinterest.svg" alt="pinterest">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="copyright-social-icon-img" src="img/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="data.js"></script>
+    <script>
+        const сardProducts = JSON.parse(dataProducts);
+        console.log(сardProducts);
+
+        const sectionProductsEl = document.querySelector('.products');
+
+        const ulProductsListEl = document.createElement('ul');
+        ulProductsListEl.classList.add('products-list');
+
+        const divProductsButtonWrp = document.querySelector('.products-button-wrp');
+        
+        сardProducts.forEach(element => {
+            const liProductsListCardsEl = document.createElement('li');
+            liProductsListCardsEl.classList.add('products-list-cards');
+
+            const imgProductsListImgEl = document.createElement('img');
+            imgProductsListImgEl.classList.add('products-list-img');
+            imgProductsListImgEl.src = element.image;
+            imgProductsListImgEl.alt = 'img';
+            imgProductsListImgEl.setAttribute('width', 360);
+            imgProductsListImgEl.setAttribute('height', 420);
+
+            const divProductsListTextPosition = document.createElement('div');
+            divProductsListTextPosition.classList.add('products-list-text-position');
+
+            const h2ProductsListTitle = document.createElement('h2');
+            h2ProductsListTitle.classList.add('products-list-title');
+            h2ProductsListTitle.textContent = element.title;
+
+            const pProductsListTxt = document.createElement('p');
+            pProductsListTxt.classList.add('products-list-txt');
+            pProductsListTxt.textContent = element.description;
+
+            const pProductsListPrice = document.createElement('p');
+            pProductsListPrice.classList.add('products-list-price');
+            pProductsListPrice.textContent = `$${element.price}`;
+
+            sectionProductsEl.append(ulProductsListEl);
+            ulProductsListEl.append(liProductsListCardsEl);
+            liProductsListCardsEl.append(imgProductsListImgEl);
+            liProductsListCardsEl.append(divProductsListTextPosition);
+            divProductsListTextPosition.append(h2ProductsListTitle);
+            divProductsListTextPosition.append(pProductsListTxt);
+            divProductsListTextPosition.append(pProductsListPrice);
+            sectionProductsEl.append(divProductsButtonWrp);
+        });
+    </script>
+</body>
+</html>
